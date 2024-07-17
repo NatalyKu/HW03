@@ -3,7 +3,7 @@ import random
 def get_numbers_ticket(min_numb, max_numb, quantity):
     list_numbers = set()
     if min_numb <1 or max_numb > 1000 or min_numb>max_numb or len(list_numbers)>quantity:
-        return print(f"You numbers are wrong")
+        return f"You numbers are wrong"
         
     else:
         while quantity != len(list_numbers):
