@@ -2,7 +2,7 @@ import random
 
 def get_numbers_ticket(min_numb, max_numb, quantity):
     list_numbers = set()
-    if min_numb <1 or max_numb > 1000 or min_numb>max_numb or (max_numb-min_numb) <= quantity:
+    if min_numb <1 or max_numb > 1000 or min_numb>max_numb or (max_numb-min_numb) < quantity:
         print(f"You numbers are wrong")
         return[]
         
@@ -13,5 +13,5 @@ def get_numbers_ticket(min_numb, max_numb, quantity):
         return numbers
    
 
-lottery_numbers = get_numbers_ticket(1,15,9)        
+lottery_numbers = get_numbers_ticket(10,15,5)        
 print("Ваші лотерейні числа:", lottery_numbers)
